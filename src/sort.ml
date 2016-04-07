@@ -48,7 +48,7 @@ let array =
 let input_sum = sum array
 let () = debug array
 
-let () = Array.sort Pervasives.compare array
+let () = Array.sort (fun (x:int) y -> Pervasives.compare x y) array
 
 let sorted_sum = sum array
 let () = debug array
