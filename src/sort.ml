@@ -48,7 +48,22 @@ let array =
 let input_sum = sum array
 let () = debug array
 
-let () = assert false
+let () =
+  (* selection sort *)
+  for i = 0 to arg_length - 1 do
+    let m = ref array.(i) in
+    let j' = ref i in
+    for j = (i+1) to arg_length - 1 do
+      if !m > array.(j) then begin
+        m := array.(j);
+        j':= j;
+      end;
+    done;
+    let tmp = array.(i) in
+    array.(i) <- !m;
+    array.(!j') <- tmp;
+  done
+
 
 let sorted_sum = sum array
 let () = debug array
