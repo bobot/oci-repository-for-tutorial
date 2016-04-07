@@ -1,0 +1,12 @@
+DESTDIR 	?=
+prefix		?=@prefix@
+exec_prefix	?=@exec_prefix@
+datarootdir     ?=@datarootdir@
+datadir         ?=@datadir@
+BINDIR		?="$(DESTDIR)@bindir@"
+LIBDIR		?="$(DESTDIR)@libdir@"
+DATADIR		?="$(DESTDIR)@datarootdir@"
+VARDIR		?="$(DESTDIR)@localstatedir@"
+MANDIR		?="$(DESTDIR)@mandir@"
+
+VERSION=@PACKAGE_VERSION@

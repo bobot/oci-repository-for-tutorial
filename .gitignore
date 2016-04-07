@@ -18,3 +18,11 @@ _build/
 # oasis generated files
 setup.data
 setup.log
+
+#autoconf
+/config.status
+/configure
+/config.log
+/.config
+/autom4te.cache/
+/.merlin
